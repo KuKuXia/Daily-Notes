@@ -25,8 +25,8 @@
 
 
 - 从 Visual Studio“文件”菜单中，选择“新建”>“项目”。
-- 创建新的 ASP.NET Core Web 应用程序。 将该项目命名为 RazorPagesMovie。 务必将该项目命名为 ContosoUniversity，以便复制/粘贴代码时命名空间相匹配。 ![img](E:\GitHub\RazorPagesInNETCore\img\1NewWeb.PNG)
-- 在下拉列表中选择“ASP.NET Core 2.2”，然后选择“Web 应用程序”。 ![img](E:\GitHub\RazorPagesInNETCore\img\1NewWeb2.PNG)
+- 创建新的 ASP.NET Core Web 应用程序。 将该项目命名为 RazorPagesMovie。 务必将该项目命名为 ContosoUniversity，以便复制/粘贴代码时命名空间相匹配。 ![img](https://github.com/Dadaxin/Daily-Notes/1NewWeb.PNG)
+- 在下拉列表中选择“ASP.NET Core 2.2”，然后选择“Web 应用程序”。 ![img](https://github.com/Dadaxin/Daily-Notes/1NewWeb2.PNG)
 
 ####  问题
 
