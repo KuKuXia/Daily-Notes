@@ -2,7 +2,7 @@
 
 ## 概念整合
 
-！[img](https://github.com/Dadaxin/Daily-Notes/blob/master/ConceptInFromMVCToRazorPages.PNG)
+！[img](https://github.com/Dadaxin/Daily-Notes/blob/master/ConceptInFromMVCToRazorPages.png)
 
 ## 介绍
 
