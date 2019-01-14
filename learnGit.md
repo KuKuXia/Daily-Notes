@@ -7,7 +7,7 @@
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
-注意，`git config`命令的`--global`参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+注，`git config`命令的`--global`参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
 ## 创建版本库并添加文件
 1. 选择一个合适的地方，创建一个空目录：
