@@ -282,3 +282,9 @@ public List<employee> GetEmployees()
 ```
 本示例中，将数据库的数据放在了DataSet里面。
 
+
+
+结构如下图：
+
+![MVC7Days](https://github.com/Dadaxin/Daily-Notes/tree/master/img/MVC7Days.png)
+
