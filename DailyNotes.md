@@ -7,20 +7,6 @@ written in 16th to 20th in Jan.,2019
 
 
 
-
-
-
-
-
-## Contents
-
-
-[TOC]
-
-
-
-
-
 ## 16th
 
 今日内容：Bootstrap Table学习、
@@ -286,5 +272,5 @@ public List<employee> GetEmployees()
 
 结构如下图：
 
-![MVC7Days](https://github.com/Dadaxin/Daily-Notes/tree/master/img/MVC7Days.png)
+![MVC结构](https://github.com/Dadaxin/Daily-Notes/tree/master/img/MVC7Days.png)
 
