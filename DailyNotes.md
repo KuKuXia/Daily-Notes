@@ -274,3 +274,94 @@ public List<employee> GetEmployees()
 
 ![MVC结构](https://github.com/Dadaxin/Daily-Notes/tree/master/img/MVC7Days.png)
 
+
+
+## 19th,Jan.
+
+
+
+### MVC七天中的其他知识点
+
+:tada:
+
+**input的`name`属性和`id`属性，一个用于与服务器交互使用，一个用于客户端使用。**
+
+:tada:
+
+想从前端往后端传数据的一种方法是使用form，**form有`action`属性，用于绑定controller中对应的方法，和`method`属性，用于决定该表单的数据传递方式。**一个form中所有控件的值将会一起发送给服务器，name将是控件对应的服务器标识。该表单所在的页面有一个对应的controller方法，该方法的传入参数为一个类对象，该类对象的属性对应传入服务器的控件的值。详解在下面Model Binder的介绍中。
+
+```
+salesDal.Employees.Add（e);
+    salesDal.SaveChanges();
+ 
+```
+
+:tada:
+
+Model Binder是个啥，成谜。
+
+使用post数据更新Employee对象。是怎么匹配Employee对象和post数据的呢。当action方法包括元类型参数（此处指Employee对象）时，Model Binder将会把参数的名字与传过来的数据（此处是post数据，也可以是查询字符串）的键做比较。
+
+如果一致，数据分配给参数。如果不一致，参数设为缺省。由于数据类型未匹配异常的抛出，不会进行值分配。
+
+**当元类型参数是类时（如本例，Employee对象），Model Binder将通过检索所有的属性，将接收到的数据（此处是input对应的`name`与类属性名称对比，同时会根据匹配是否成功来更新`ModelState.IsValid`。**
+
+:tada:
+
+为什么取消和保存按钮设置为同一个name，是因为这两个按钮是相反键么，就是输入的东西要么取消要么保存，该页面对应的controller只传入了一个参数？还是只是为了引出多重按钮提交。
+
+ :tada:
+
+DataAnnotations数据验证，服务器端验证。
+
+```
+@Html.ValidationMessage("“)——根据关键字显示ModelState显示的错误消息。
+```
+
+
+
+
+
+## 20th,Jan.
+
+### 继续MVC七天
+
+### .core MVC
+
+:tada:
+
+如果导航属性可以容纳多个实体（在多对多或一对多关系中），则其类型必须是可以添加，删除和更新条目的列表，例如ICollection <T>。您可以指定ICollection <T>或类型，如List <T>或HashSet <T>。如果指定ICollection <T>，EF默认创建一个HashSet <T>集合。
+
+:tada:
+
+1. 新建项目
+
+2. 添加空controller
+
+   - 路由在*startup.cs*中设置
+
+     ```c#
+     app.UseMvc(routes =>
+     {
+     routes.MapRoute(
+     name: "default",
+             template: "{controller=Home}/{action=Index}/{id?}");
+     });
+     ```
+
+     `id`用于设置路由参数，将此参数传给controller
+
+
+
+
+
+## 22th,Jan
+
+### F12的使用
+
+[教程](https://blog.csdn.net/m0_37724356/article/details/79884006)
+
+- Console：当网页的JS代码中使用了console.log()函数时，该函数输出的日志信息会在控制台中显示。日志信息一般在开发调试时启用，而当正式上线后，一般会将该函数去掉。
+- Source:
+
+![](https://img-blog.csdn.net/2018041018293410?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NzI0MzU2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
